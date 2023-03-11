@@ -1,0 +1,14 @@
+.form-control{
+    border: 1px solid #b3a1a1 !important;
+    padding: 8px 10px;/*y x*/
+}
+
+.form-select{
+    border: 1px solid #b3a1a1 !important;
+    padding: 8px 10px;/*y x*/
+}
+
+label{
+    bottom: 0;
+    top: 0;
+}
