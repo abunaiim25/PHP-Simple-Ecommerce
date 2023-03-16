@@ -7,8 +7,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PHP Ecom</title>
+
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+ 
+  <!--owl.carousel-->
+  <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+  <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
 
   <!--Google fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">

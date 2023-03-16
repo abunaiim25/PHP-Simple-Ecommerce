@@ -10,6 +10,13 @@ function getAllActive($table)
     return $query_run = mysqli_query($conn, $query);
 }
 
+function getAllTrending()
+{
+    global $conn;
+    $query = "SELECT * FROM products WHERE trending='1' " ;
+    return $query_run = mysqli_query($conn, $query);
+}
+
 function getByIdActive($table, $id)
 {
     global $conn;
@@ -50,6 +57,15 @@ function getOrders(){
     return $query_run = mysqli_query($conn, $query);
 }
 
+
+function checkingTrackingNoValid($trackingNo)
+{
+    global $conn;
+    $userId =  $_SESSION['auth_user']['user_id'];
+
+    $query = "SELECT * FROM orders WHERE tracking_no='$trackingNo' AND user_id='$userId'";
+    return mysqli_query($conn, $query);
+}
 
 
 function redirect($url, $message)

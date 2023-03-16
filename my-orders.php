@@ -41,7 +41,7 @@ include 'authenticate.php'; //if not login, user can not go cart section
                                         <td> <?=$item['tracking_no'] ?></td>
                                         <td> <?=$item['total_price'] ?></td>
                                         <td> <?=$item['created_at'] ?></td>
-                                        <td><a href="" class="btn btn-success btn-sm">View Details</a></td>
+                                        <td><a href="view-order.php?t=<?=$item['tracking_no'] ?>" class="btn btn-success btn-sm">View Details</a></td>
                                     </tr>
                                     <?php
                                 }
